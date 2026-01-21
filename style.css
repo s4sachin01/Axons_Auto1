@@ -12,7 +12,7 @@ html, body {
   height: 100%;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -36,7 +36,7 @@ html, body {
   background: rgba(0, 0, 0, 0.6);
 }
 
-/* CONTENT */
+/* HERO CONTENT */
 .hero-content {
   position: relative;
   text-align: center;
@@ -45,28 +45,28 @@ html, body {
   max-width: 900px;
 }
 
-/* 🔥 LOGO FIX */
+/* 🔒 LOGO BADGE (CHECKERBOARD FIX) */
 .logo-box {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(6px);
+  background-color: #0f2a3a;
+  padding: 22px 26px;
+  border-radius: 18px;
+  margin-bottom: 28px;
 
-  padding: 18px 22px;
-  border-radius: 16px;
-  margin-bottom: 25px;
-
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
 }
 
+/* LOGO IMAGE */
 .hero-logo {
   width: 140px;
   display: block;
+  background-color: #0f2a3a;
 }
 
-/* TITLE */
+/* HEADING */
 .hero h1 {
   font-size: 2.8rem;
   font-weight: 700;
@@ -80,7 +80,7 @@ html, body {
   opacity: 0.9;
 }
 
-/* BUTTONS */
+/* BUTTON GROUP */
 .hero-buttons {
   display: flex;
   justify-content: center;
@@ -88,6 +88,7 @@ html, body {
   flex-wrap: wrap;
 }
 
+/* BUTTON BASE */
 .btn {
   padding: 12px 30px;
   border-radius: 30px;
@@ -96,7 +97,7 @@ html, body {
   transition: all 0.3s ease;
 }
 
-/* PRIMARY */
+/* PRIMARY BUTTON */
 .btn-primary {
   background-color: #00aaff;
   color: #ffffff;
@@ -106,7 +107,7 @@ html, body {
   background-color: #008ecc;
 }
 
-/* OUTLINE */
+/* OUTLINE BUTTON */
 .btn-outline {
   border: 2px solid #ffffff;
   color: #ffffff;
