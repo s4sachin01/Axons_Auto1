@@ -3,264 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern Website</title>
+  <title>Axons Auto | Care For Your Car</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --primary: #6366f1;
-      --secondary: #0f172a;
-      --accent: #22c55e;
-      --bg: #f8fafc;
-      --text: #334155;
-      --white: #ffffff;
-      --radius: 14px;
-      --shadow: 0 20px 40px rgba(0,0,0,0.08);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    /* NAVBAR */
-    header {
-      position: sticky;
-      top: 0;
-      background: var(--white);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      z-index: 1000;
-    }
-
-    nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav h1 {
-      color: var(--primary);
-      font-weight: 700;
-    }
-
-    nav ul {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--secondary);
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    /* HERO */
-    .hero {
-      max-width: 1200px;
-      margin: auto;
-      padding: 5rem 2rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      gap: 3rem;
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      color: var(--secondary);
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.9rem 1.8rem;
-      border-radius: var(--radius);
-      background: var(--primary);
-      color: white;
-      font-weight: 600;
-      text-decoration: none;
-      transition: transform 0.3s, box-shadow 0.3s;
-      box-shadow: var(--shadow);
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-    }
-
-    .hero-card {
-      background: white;
-      padding: 3rem;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-
-    /* FEATURES */
-    section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 4rem 2rem;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2.2rem;
-      margin-bottom: 3rem;
-      color: var(--secondary);
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .feature {
-      background: var(--white);
-      padding: 2rem;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      transition: transform 0.3s;
-    }
-
-    .feature:hover {
-      transform: translateY(-5px);
-    }
-
-    .feature h3 {
-      margin-bottom: 1rem;
-      color: var(--primary);
-    }
-
-    /* CTA */
-    .cta {
-      background: linear-gradient(135deg, var(--primary), var(--accent));
-      color: white;
-      text-align: center;
-      padding: 4rem 2rem;
-      border-radius: var(--radius);
-      margin: 4rem 2rem;
-    }
-
-    .cta h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    /* FOOTER */
-    footer {
-      background: var(--secondary);
-      color: #cbd5f5;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-    }
-  </style>
 </head>
 
 <body>
 
-<header>
-  <nav>
-    <h1>MySite</h1>
-    <ul>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#cta">Get Started</a></li>
-    </ul>
-  </nav>
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container nav">
+    <div class="logo">
+      <img src="images/axons-logo.png" alt="Axons Auto Logo">
+    </div>
+
+    <div class="nav-actions">
+      <a href="tel:+919999999999" class="btn outline">Call</a>
+      <a href="https://wa.me/919999999999" class="btn primary">WhatsApp</a>
+    </div>
+  </div>
 </header>
 
-<main>
-  <!-- HERO -->
-  <section class="hero">
-    <div>
-      <h2>Build Modern Websites Faster</h2>
-      <p>Clean design, smooth interactions, and responsive layouts—all without frameworks.</p>
-      <a href="#cta" class="btn">Start Now</a>
-    </div>
-    <div class="hero-card">
-      🚀 Fully Styled  
-      <br />⚡ Lightning Fast  
-      <br />🎯 Production Ready
-    </div>
-  </section>
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-content">
+    <h1>Care For Your Car.<br>Without Leaving Palm Drive.</h1>
+    <p>
+      Premium car & bike detailing services exclusively for
+      <strong>The Palm Drive, Emaar</strong> residents.
+    </p>
 
-  <!-- FEATURES -->
-  <section id="features">
-    <h2 class="section-title">Why This Website Rocks</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>Responsive Design</h3>
-        <p>Looks amazing on mobile, tablet, and desktop devices.</p>
-      </div>
-      <div class="feature">
-        <h3>Pure HTML/CSS/JS</h3>
-        <p>No dependencies. No build steps. Total control.</p>
-      </div>
-      <div class="feature">
-        <h3>Modern UI</h3>
-        <p>Clean layout, smooth animations, and elegant spacing.</p>
-      </div>
+    <ul class="hero-points">
+      <li>Society-exclusive service</li>
+      <li>Luxury & premium vehicle care</li>
+      <li>24×7 availability for residents</li>
+    </ul>
+
+    <div class="hero-buttons">
+      <a href="tel:+919999999999" class="btn primary">📞 Call Now</a>
+      <a href="https://wa.me/919999999999" class="btn secondary">💬 Book on WhatsApp</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CTA -->
-  <section id="cta" class="cta">
-    <h2>Ready to Launch?</h2>
-    <p>Use this template and build something incredible today.</p>
-    <br />
-    <a href="#" class="btn">Get the Code</a>
-  </section>
-</main>
+<!-- ================= SERVICES ================= -->
+<section class="services">
+  <div class="container">
+    <h2>Our Services</h2>
 
-<footer>
-  © 2026 MySite. Built with ❤️ using HTML, CSS & JavaScript.
+    <div class="services-grid">
+      <div class="service-card">Car Wash</div>
+      <div class="service-card">Interior Detailing</div>
+      <div class="service-card">Exterior Detailing</div>
+      <div class="service-card">Ceramic Coating</div>
+      <div class="service-card">Paint Protection Film (PPF)</div>
+      <div class="service-card">Bike Detailing</div>
+      <div class="service-card">Monthly Packages</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY AXONS ================= -->
+<section class="why">
+  <div class="container">
+    <h2>Why Palm Drive Residents Choose Axons Auto</h2>
+
+    <div class="why-grid">
+      <div>✔ Society-exclusive operations</div>
+      <div>✔ Trained detailing professionals</div>
+      <div>✔ Premium-grade products</div>
+      <div>✔ Safe service within society</div>
+      <div>✔ Trusted with luxury vehicles</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXCLUSIVITY ================= -->
+<section class="exclusive">
+  <div class="container">
+    <h2>Designed Exclusively for The Palm Drive</h2>
+    <p>
+      We intentionally serve only residents of <strong>The Palm Drive, Emaar</strong>.
+      This ensures higher quality, faster service, and complete accountability.
+    </p>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+  <div class="container">
+    <h2>Give Your Car the Care It Deserves</h2>
+    <div class="cta-buttons">
+      <a href="https://wa.me/919999999999" class="btn primary">💬 Book on WhatsApp</a>
+      <a href="#" class="btn outline">📅 Book Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <p><strong>Axons Auto | Care For Your Car</strong></p>
+    <p>Service Area: The Palm Drive, Emaar (Residents Only)</p>
+    <p>📞 Call | 💬 WhatsApp</p>
+    <p class="copyright">© Axons Auto. All rights reserved.</p>
+  </div>
 </footer>
 
-<script>
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href'))
-        .scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-</script>
+<!-- ================= STICKY CTA (MOBILE) ================= -->
+<div class="sticky-cta">
+  <a href="tel:+919999999999">📞 Call</a>
+  <a href="https://wa.me/919999999999">💬 WhatsApp</a>
+</div>
 
 </body>
 </html>
