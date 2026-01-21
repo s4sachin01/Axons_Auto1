@@ -15,13 +15,17 @@ body {
 .hero {
   position: relative;
   min-height: 100vh;
-  background: url("../assets/images/palm-drive-bg.jpg") no-repeat center center/cover;
+  background-image: url("../assets/images/palm-drive-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* OVERLAY */
+/* DARK OVERLAY */
 .hero::before {
   content: "";
   position: absolute;
