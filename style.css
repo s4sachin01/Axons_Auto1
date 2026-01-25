@@ -3,62 +3,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
 }
 
 /* HERO SECTION */
 .hero {
   position: relative;
   height: 100vh;
-  background: url("assets/images/palm-drive-bg.jpg") center/cover no-repeat;
+  background: url("assets/images/hero-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 /* DARK OVERLAY */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.65);
 }
 
 /* CONTENT */
 .hero-content {
   position: relative;
   z-index: 2;
+  text-align: center;
   color: #ffffff;
-  max-width: 900px;
   padding: 20px;
+  max-width: 900px;
 }
 
 /* LOGO */
-.hero-logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
 .hero-logo img {
-  width: 120px;
-  height: auto;
-  background: transparent;
-  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.6));
+  width: 160px;
+  margin-bottom: 25px;
 }
 
-/* HEADING */
+/* HEADINGS */
 .hero h1 {
-  font-size: 42px;
+  font-size: 2.6rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  line-height: 1.2;
 }
 
-/* SUBTITLE */
 .subtitle {
-  font-size: 18px;
+  font-size: 1.1rem;
   opacity: 0.9;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 /* BUTTONS */
@@ -70,27 +66,33 @@
 }
 
 .btn {
-  padding: 14px 28px;
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: 600;
   border-radius: 30px;
-  font-size: 16px;
   text-decoration: none;
   transition: all 0.3s ease;
+  min-width: 160px;
+  text-align: center;
 }
 
 /* PRIMARY BUTTON */
 .btn.primary {
-  background: #00aaff;
-  color: #fff;
+  background: #e50914;
+  color: #ffffff;
+  border: 2px solid #e50914;
 }
 
 .btn.primary:hover {
-  background: #008ecc;
+  background: #b20710;
+  border-color: #b20710;
 }
 
 /* OUTLINE BUTTON */
 .btn.outline {
-  border: 2px solid #ffffff;
+  background: transparent;
   color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .btn.outline:hover {
@@ -101,14 +103,14 @@
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 30px;
+    font-size: 2rem;
   }
 
   .subtitle {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .hero-logo img {
-    width: 100px;
+    width: 130px;
   }
 }
