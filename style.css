@@ -3,132 +3,112 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* FULL HEIGHT */
-html, body {
-  width: 100%;
-  height: 100%;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* HERO SECTION */
 .hero {
   position: relative;
-  min-height: 100vh;
-  width: 100%;
-
-  background-image: url("./assets/images/palm-drive-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  height: 100vh;
+  background: url("assets/images/palm-drive-bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 /* DARK OVERLAY */
-.hero::before {
-  content: "";
+.overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.55);
 }
 
-/* HERO CONTENT */
+/* CONTENT */
 .hero-content {
   position: relative;
-  text-align: center;
+  z-index: 2;
   color: #ffffff;
-  padding: 20px;
   max-width: 900px;
+  padding: 20px;
 }
 
-/* 🔒 LOGO BADGE (CHECKERBOARD FIX) */
-.logo-box {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #0f2a3a;
-  padding: 22px 26px;
-  border-radius: 18px;
-  margin-bottom: 28px;
-
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
-}
-
-/* LOGO IMAGE */
+/* LOGO */
 .hero-logo {
-  width: 140px;
-  display: block;
-  background-color: #0f2a3a;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero-logo img {
+  width: 120px;
+  height: auto;
+  background: transparent;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.6));
 }
 
 /* HEADING */
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
-/* TAGLINE */
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+/* SUBTITLE */
+.subtitle {
+  font-size: 18px;
   opacity: 0.9;
+  margin-bottom: 30px;
 }
 
-/* BUTTON GROUP */
+/* BUTTONS */
 .hero-buttons {
   display: flex;
-  justify-content: center;
   gap: 15px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-/* BUTTON BASE */
 .btn {
-  padding: 12px 30px;
+  padding: 14px 28px;
   border-radius: 30px;
-  font-weight: 600;
+  font-size: 16px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 /* PRIMARY BUTTON */
-.btn-primary {
-  background-color: #00aaff;
-  color: #ffffff;
+.btn.primary {
+  background: #00aaff;
+  color: #fff;
 }
 
-.btn-primary:hover {
-  background-color: #008ecc;
+.btn.primary:hover {
+  background: #008ecc;
 }
 
 /* OUTLINE BUTTON */
-.btn-outline {
+.btn.outline {
   border: 2px solid #ffffff;
   color: #ffffff;
 }
 
-.btn-outline:hover {
-  background-color: #ffffff;
+.btn.outline:hover {
+  background: #ffffff;
   color: #000000;
 }
 
-/* MOBILE */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2rem;
+    font-size: 30px;
   }
 
-  .hero-logo {
-    width: 120px;
+  .subtitle {
+    font-size: 16px;
   }
 
-  .hero p {
-    font-size: 1rem;
+  .hero-logo img {
+    width: 100px;
   }
 }
