@@ -10,13 +10,13 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   position: relative;
   height: 100vh;
 
-  /* ✅ FIXED GITHUB PAGES PATH */
-  background-image: url("/Axons_Auto/assets/images/palm-drive-bg.jpg");
+  /* ✅ CORRECT REPO NAME */
+  background-image: url("/Axons_Auto1/assets/images/palm-drive-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ html, body {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0,0,0,0.65);
 }
 
 /* CONTENT */
@@ -38,7 +38,7 @@ html, body {
   position: relative;
   z-index: 2;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   padding: 20px;
   max-width: 900px;
 }
@@ -54,7 +54,6 @@ html, body {
   font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 15px;
-  line-height: 1.2;
 }
 
 .subtitle {
@@ -66,8 +65,8 @@ html, body {
 /* BUTTONS */
 .hero-buttons {
   display: flex;
-  justify-content: center;
   gap: 15px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -75,45 +74,38 @@ html, body {
   min-width: 160px;
   padding: 14px 30px;
   border-radius: 30px;
-  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s ease;
-  text-align: center;
+  transition: 0.3s;
 }
 
-/* PRIMARY BUTTON */
+/* PRIMARY */
 .btn.primary {
   background: #e50914;
-  color: #ffffff;
+  color: #fff;
   border: 2px solid #e50914;
 }
 
 .btn.primary:hover {
   background: #b20710;
-  border-color: #b20710;
 }
 
-/* OUTLINE BUTTON */
+/* OUTLINE */
 .btn.outline {
   background: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .btn.outline:hover {
-  background: #ffffff;
-  color: #000000;
+  background: #fff;
+  color: #000;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
   }
 
   .hero-logo img {
