@@ -10,13 +10,13 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   position: relative;
   height: 100vh;
 
-  /* ✅ CORRECT REPO NAME */
-  background-image: url("/Axons_Auto1/assets/images/palm-drive-bg.jpg");
+  /* ✅ THIS IS THE ONLY CORRECT PATH */
+  background-image: url("assets/images/palm-drive-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ html, body {
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0, 0, 0, 0.65);
 }
 
 /* CONTENT */
@@ -38,7 +38,7 @@ html, body {
   position: relative;
   z-index: 2;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   padding: 20px;
   max-width: 900px;
 }
@@ -65,8 +65,8 @@ html, body {
 /* BUTTONS */
 .hero-buttons {
   display: flex;
-  gap: 15px;
   justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
@@ -74,6 +74,7 @@ html, body {
   min-width: 160px;
   padding: 14px 30px;
   border-radius: 30px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
@@ -82,7 +83,7 @@ html, body {
 /* PRIMARY */
 .btn.primary {
   background: #e50914;
-  color: #fff;
+  color: #ffffff;
   border: 2px solid #e50914;
 }
 
@@ -93,13 +94,13 @@ html, body {
 /* OUTLINE */
 .btn.outline {
   background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .btn.outline:hover {
-  background: #fff;
-  color: #000;
+  background: #ffffff;
+  color: #000000;
 }
 
 /* MOBILE */
