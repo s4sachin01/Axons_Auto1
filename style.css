@@ -14,7 +14,13 @@ html, body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("assets/images/palm-drive-bg.jpg") center / cover no-repeat;
+
+  /* ✅ FIXED GITHUB PAGES PATH */
+  background-image: url("/Axons_Auto/assets/images/palm-drive-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +82,7 @@ html, body {
   text-align: center;
 }
 
-/* PRIMARY */
+/* PRIMARY BUTTON */
 .btn.primary {
   background: #e50914;
   color: #ffffff;
@@ -88,7 +94,7 @@ html, body {
   border-color: #b20710;
 }
 
-/* OUTLINE */
+/* OUTLINE BUTTON */
 .btn.outline {
   background: transparent;
   color: #ffffff;
