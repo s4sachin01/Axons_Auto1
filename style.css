@@ -6,21 +6,21 @@
 }
 
 html, body {
-  font-family: 'Poppins', sans-serif;
   height: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* HERO SECTION */
 .hero {
   position: relative;
   height: 100vh;
-  background: url("assets/images/hero-bg.jpg") center/cover no-repeat;
+  background: url("assets/images/palm-drive-bg.jpg") center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* DARK OVERLAY */
+/* OVERLAY */
 .overlay {
   position: absolute;
   inset: 0;
@@ -43,7 +43,7 @@ html, body {
   margin-bottom: 25px;
 }
 
-/* HEADINGS */
+/* TEXT */
 .hero h1 {
   font-size: 2.6rem;
   font-weight: 700;
@@ -60,23 +60,23 @@ html, body {
 /* BUTTONS */
 .hero-buttons {
   display: flex;
-  gap: 15px;
   justify-content: center;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 .btn {
+  min-width: 160px;
   padding: 14px 30px;
+  border-radius: 30px;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 30px;
   text-decoration: none;
   transition: all 0.3s ease;
-  min-width: 160px;
   text-align: center;
 }
 
-/* PRIMARY BUTTON */
+/* PRIMARY */
 .btn.primary {
   background: #e50914;
   color: #ffffff;
@@ -88,7 +88,7 @@ html, body {
   border-color: #b20710;
 }
 
-/* OUTLINE BUTTON */
+/* OUTLINE */
 .btn.outline {
   background: transparent;
   color: #ffffff;
