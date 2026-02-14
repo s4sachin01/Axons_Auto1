@@ -1,93 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Axons Auto | Care For Your Car</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axons Auto | Premium Car Detailing</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Correct CSS Path -->
-  <link rel="stylesheet" href="css/style.css" />
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("assets/images/palm-drive-bg.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.hero img {
+  width: 180px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: red;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: darkred;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: black;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  padding: 25px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #eee;
+}
+
+footer {
+  background: black;
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+}
+
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 28px;
+  }
+  .hero img {
+    width: 130px;
+  }
+}
+
+</style>
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="overlay"></div>
+<section class="hero">
+  <div class="hero-content">
+    <img src="assets/images/axons-auto-logo.png" alt="Axons Auto Logo">
+    <h1>Premium Car Detailing at The Palm Drive</h1>
+    <p>Care For Your Car · 24×7 Society Exclusive Service</p>
+    <a href="tel:+91XXXXXXXXXX" class="btn btn-primary">Call Now</a>
+    <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-outline">WhatsApp</a>
+  </div>
+</section>
 
-    <div class="hero-content">
-      <div class="hero-logo">
-        <img src="assets/images/axons-auto-logo.png" alt="Axons Auto Logo">
-      </div>
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">Exterior Wash & Polish</div>
+    <div class="card">Interior Deep Cleaning</div>
+    <div class="card">Ceramic & Wax Coating</div>
+    <div class="card">Monthly Maintenance</div>
+  </div>
+</section>
 
-      <h1>Premium Car Detailing at The Palm Drive</h1>
-      <p class="subtitle">Care For Your Car · 24×7 Society Exclusive Service</p>
+<section class="section">
+  <h2>Affordable Pricing</h2>
+  <div class="cards">
+    <div class="card">Basic - ₹499</div>
+    <div class="card">Premium - ₹999</div>
+    <div class="card">Luxury - ₹1999</div>
+  </div>
+</section>
 
-      <div class="hero-buttons">
-        <a href="tel:+91XXXXXXXXXX" class="btn primary">Call Now</a>
-        <a href="https://wa.me/91XXXXXXXXXX" class="btn outline">WhatsApp</a>
-      </div>
-    </div>
-  </section>
+<section class="section">
+  <h2>Why Choose Us?</h2>
+  <div class="cards">
+    <div class="card">Society Exclusive</div>
+    <div class="card">Trained Professionals</div>
+    <div class="card">Premium Products</div>
+    <div class="card">On-Time Service</div>
+  </div>
+</section>
 
-  <!-- SERVICES -->
-  <section class="section">
-    <h2>Our Services</h2>
-    <div class="cards">
-      <div class="card">Exterior Wash & Polish</div>
-      <div class="card">Interior Deep Cleaning</div>
-      <div class="card">Ceramic & Wax Coating</div>
-      <div class="card">Monthly Maintenance</div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section class="section gray">
-    <h2>Affordable Pricing</h2>
-    <div class="cards">
-      <div class="card price">
-        <h3>Basic</h3>
-        <p class="price-value">₹499</p>
-        <span>Exterior Wash</span>
-      </div>
-
-      <div class="card price featured">
-        <h3>Premium</h3>
-        <p class="price-value">₹999</p>
-        <span>Interior + Exterior</span>
-      </div>
-
-      <div class="card price">
-        <h3>Luxury</h3>
-        <p class="price-value">₹1999</p>
-        <span>Ceramic Protection</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY US -->
-  <section class="section">
-    <h2>Why Axons Auto?</h2>
-    <div class="cards">
-      <div class="card">Society Exclusive Service</div>
-      <div class="card">Trained Professionals</div>
-      <div class="card">Premium Products</div>
-      <div class="card">On-Time Service</div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Book Your Car Service Now</h2>
-    <a href="https://wa.me/91XXXXXXXXXX" class="btn primary">WhatsApp Us</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Axons Auto. All Rights Reserved.</p>
-  </footer>
+<footer>
+  © 2026 Axons Auto. All Rights Reserved.
+</footer>
 
 </body>
 </html>
