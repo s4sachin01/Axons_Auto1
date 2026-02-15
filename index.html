@@ -9,137 +9,146 @@
 
 <style>
 
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  color: #222;
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0f172a;
+  color:white;
+  line-height:1.6;
 }
 
-/* HERO */
-.hero {
-  height: 100vh;
-  background: url("assets/images/palm-drive-bg.jpg") center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
+/* ================= HERO ================= */
+.hero{
+  height:100vh;
+  background:
+    linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+    url("assets/images/palm-drive-bg.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  top: 0;
-  left: 0;
+.hero-content{
+  max-width:900px;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 900px;
-  padding: 20px;
+.hero img{
+  width:160px;
+  margin-bottom:25px;
+  filter:drop-shadow(0 10px 25px rgba(0,0,0,0.5));
 }
 
-.hero img {
-  width: 180px;
-  margin-bottom: 25px;
+.hero h1{
+  font-size:48px;
+  font-weight:700;
+  margin-bottom:15px;
+  letter-spacing:1px;
 }
 
-.hero h1 {
-  font-size: 42px;
-  margin-bottom: 15px;
+.hero p{
+  font-size:18px;
+  margin-bottom:35px;
+  opacity:0.85;
 }
 
-.hero p {
-  margin-bottom: 30px;
-  font-size: 18px;
+.btn{
+  display:inline-block;
+  padding:14px 30px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  margin:10px;
+  transition:0.3s ease;
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 600;
-  margin: 10px;
-  transition: 0.3s;
+.btn-primary{
+  background:linear-gradient(45deg,#ff0000,#ff4d4d);
+  color:white;
+  box-shadow:0 10px 25px rgba(255,0,0,0.4);
 }
 
-.btn-primary {
-  background: red;
-  color: white;
+.btn-primary:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 35px rgba(255,0,0,0.6);
 }
 
-.btn-primary:hover {
-  background: darkred;
+.btn-outline{
+  border:2px solid white;
+  color:white;
 }
 
-.btn-outline {
-  border: 2px solid white;
-  color: white;
+.btn-outline:hover{
+  background:white;
+  color:#0f172a;
 }
 
-.btn-outline:hover {
-  background: white;
-  color: black;
+/* ================= SECTIONS ================= */
+.section{
+  padding:100px 20px;
+  text-align:center;
 }
 
-/* SECTIONS */
-.section {
-  padding: 80px 20px;
-  text-align: center;
+.section h2{
+  font-size:36px;
+  margin-bottom:60px;
+  font-weight:700;
 }
 
-.section h2 {
-  margin-bottom: 40px;
-  font-size: 30px;
+/* ================= CARDS ================= */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  max-width:1200px;
+  margin:auto;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: auto;
+.card{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(12px);
+  padding:35px;
+  border-radius:15px;
+  font-weight:500;
+  transition:0.3s ease;
+  border:1px solid rgba(255,255,255,0.08);
 }
 
-.card {
-  padding: 25px;
-  background: #f8f8f8;
-  border-radius: 10px;
-  font-weight: 500;
-  transition: 0.3s;
+.card:hover{
+  transform:translateY(-8px);
+  background:rgba(255,255,255,0.08);
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  background: #eee;
+/* ================= PRICING HIGHLIGHT ================= */
+.price-card{
+  font-size:20px;
 }
 
-footer {
-  background: black;
-  color: #aaa;
-  padding: 20px;
-  text-align: center;
+.price-card strong{
+  font-size:26px;
+  color:#ff4d4d;
 }
 
+/* ================= FOOTER ================= */
+footer{
+  background:black;
+  padding:25px;
+  text-align:center;
+  color:#aaa;
+  font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
 @media(max-width:768px){
-  .hero h1 {
-    font-size: 28px;
-  }
-  .hero img {
-    width: 130px;
+  .hero h1{
+    font-size:30px;
   }
 }
 
@@ -152,8 +161,8 @@ footer {
     <img src="assets/images/axons-auto-logo.png" alt="Axons Auto Logo">
     <h1>Premium Car Detailing at The Palm Drive</h1>
     <p>Care For Your Car · 24×7 Society Exclusive Service</p>
-    <a href="tel:+91XXXXXXXXXX" class="btn btn-primary">Call Now</a>
-    <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-outline">WhatsApp</a>
+    <a href="#" class="btn btn-primary">Call Now</a>
+    <a href="#" class="btn btn-outline">WhatsApp</a>
   </div>
 </section>
 
@@ -170,16 +179,16 @@ footer {
 <section class="section">
   <h2>Affordable Pricing</h2>
   <div class="cards">
-    <div class="card">Basic - ₹499</div>
-    <div class="card">Premium - ₹999</div>
-    <div class="card">Luxury - ₹1999</div>
+    <div class="card price-card">Basic – <strong>₹499</strong></div>
+    <div class="card price-card">Premium – <strong>₹999</strong></div>
+    <div class="card price-card">Luxury – <strong>₹1999</strong></div>
   </div>
 </section>
 
 <section class="section">
   <h2>Why Choose Us?</h2>
   <div class="cards">
-    <div class="card">Society Exclusive</div>
+    <div class="card">Society Exclusive Service</div>
     <div class="card">Trained Professionals</div>
     <div class="card">Premium Products</div>
     <div class="card">On-Time Service</div>
