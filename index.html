@@ -28,7 +28,7 @@ body{
   position:relative;
   height:100vh;
   background:url("assets/images/palm-drive-bg.jpg") no-repeat center center;
-  background-size:cover; /* proper scaling */
+  background-size:cover;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -36,7 +36,7 @@ body{
   padding:20px;
 }
 
-/* Dark overlay */
+/* Dark overlay for contrast */
 .hero::before{
   content:"";
   position:absolute;
@@ -51,17 +51,23 @@ body{
   max-width:1000px;
 }
 
-/* 🔥 SQUARE LOGO */
+/* ===== PERFECT SQUARE LOGO FRAME ===== */
 .hero img{
-  width:300px;
-  height:300px;      /* square */
+  width:280px;
+  height:280px;
   object-fit:contain;
   margin-bottom:40px;
-  padding:25px;
-  background:rgba(255,255,255,0.06);
-  border-radius:20px;
-  filter:brightness(1.8);
-  box-shadow:0 0 60px rgba(0,150,255,0.7);
+  padding:40px;
+
+  background:rgba(0, 200, 255, 0.12);
+  border:2px solid rgba(0, 200, 255, 0.35);
+  border-radius:25px;
+
+  box-shadow:
+    0 0 40px rgba(0, 200, 255, 0.5),
+    inset 0 0 20px rgba(0, 200, 255, 0.2);
+
+  filter:brightness(1.9);
 }
 
 /* TEXT */
@@ -210,6 +216,7 @@ footer{
   .hero img{
     width:200px;
     height:200px;
+    padding:25px;
   }
 }
 
