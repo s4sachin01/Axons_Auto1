@@ -27,7 +27,8 @@ body{
 .hero{
   position:relative;
   height:100vh;
-  background:url("assets/images/palm-drive-bg.jpg") center/cover no-repeat;
+  background:url("assets/images/palm-drive-bg.jpg") no-repeat center center;
+  background-size:cover; /* proper scaling */
   display:flex;
   align-items:center;
   justify-content:center;
@@ -35,7 +36,7 @@ body{
   padding:20px;
 }
 
-/* Dark overlay for contrast */
+/* Dark overlay */
 .hero::before{
   content:"";
   position:absolute;
@@ -43,21 +44,23 @@ body{
   background:rgba(0,0,0,0.55);
 }
 
-/* Keep content above overlay */
+/* Content above overlay */
 .hero-content{
   position:relative;
   z-index:2;
   max-width:1000px;
 }
 
-/* LOGO FIXED VISIBILITY */
+/* 🔥 SQUARE LOGO */
 .hero img{
-  width:360px;
+  width:300px;
+  height:300px;      /* square */
+  object-fit:contain;
   margin-bottom:40px;
-  filter:brightness(1.8);
   padding:25px;
-  border-radius:20px;
   background:rgba(255,255,255,0.06);
+  border-radius:20px;
+  filter:brightness(1.8);
   box-shadow:0 0 60px rgba(0,150,255,0.7);
 }
 
@@ -205,7 +208,8 @@ footer{
   }
 
   .hero img{
-    width:220px;
+    width:200px;
+    height:200px;
   }
 }
 
@@ -225,7 +229,6 @@ footer{
 
 <section class="section">
   <h2>Our Services</h2>
-
   <div class="services-grid">
     <div class="service-card"><h3>Foam Wash</h3></div>
     <div class="service-card"><h3>Interior Dry Cleaning</h3></div>
@@ -238,24 +241,20 @@ footer{
 
 <section class="section">
   <h2>Affordable Pricing</h2>
-
   <div class="pricing-grid">
     <div class="price-card">
       <h3>Basic Package</h3>
       <strong>₹499</strong>
     </div>
-
     <div class="price-card">
       <h3>Premium Package</h3>
       <strong>₹999</strong>
     </div>
-
     <div class="price-card">
       <h3>Luxury Package</h3>
       <strong>₹1999</strong>
     </div>
   </div>
-
 </section>
 
 <footer>
